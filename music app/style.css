@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0
+}
+body{
+    overflow: hidden;
+    background:  linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89))
+}
+.container{
+    height:600px;
+    width:100%;
+    overflow:hidden;
+}
+.title{
+    padding-top:5px;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+}
+.title>h1{
+    text-shadow: 1px 1px 4px;
+}
+.upper{
+    height:100%;
+    width:100%;
+    position:relative;
+}
+.img{
+    padding-top:10px;
+}
+.img>img{
+    padding-top:10px;
+    display:block;
+    margin:auto;
+    height:400px;
+    width:400px;
+   border-radius: 50%;
+}
+
+
+.colors{
+    height:60px;
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    position:absolute;
+    bottom:0px;
+    cursor: pointer;
+}
+
+.one{
+    background: rgb(181, 199, 22);
+}.two{
+    background: rgb(117, 210, 238);
+}.three{
+    background: rgb(22, 199, 66);
+}.four{
+    background: rgb(184, 22, 199);
+}.five{
+    background: rgb(199, 22, 52);
+}
+.six{
+    background: rgb(22, 143, 199);
+}
+
+.bubble{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    position:absolute;
+    box-shadow: 1px 1px 10px #fff;
+}
+@keyframes jump{
+    0%{
+        bottom:0;
+        left:20%;
+    }
+    50%{
+        bottom:50%;
+        left:50%;
+    }
+    100%{
+        bottom:0%;
+        left:80%;
+    }
+}
